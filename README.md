@@ -4,7 +4,7 @@ This depository contains code used to produce cis RNA editing QTL (edQTL) mappin
 The edQTL mapping data is deposited at https://gtexportal.org.
 
 ## Quantification of RNA editing levels
-To quantify RNA editing levels in the v8 GTEx RNA-seq data, use [Docker Hub](https://hub.docker.com/r/vanessa/mpileup/) to run [parse_pileup_query.pl](parse_pileup_query.pl)
+To quantify RNA editing levels in the v8 GTEx RNA-seq data, use [Docker](https://github.com/vargasliqin/mpileup) to run [parse_pileup_query.pl](parse_pileup_query.pl)
 
 ## Combine individual editing data into a matrix
 Run the [sharedsamples_sites_matrix_FastQTL_v8.pl](sharedsamples_sites_matrix_FastQTL_v8.pl) script to convert individual editing data files into a matrix. Change `minsamps` in the script to set the minimum number of samples per site (default is 60 samples). Change `mincov` to set the minimum reads coverage per site (default is 20 reads).
